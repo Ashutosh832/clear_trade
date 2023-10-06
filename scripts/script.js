@@ -256,7 +256,7 @@
             cutout: '40%',
             layout: {
                 padding: {
-                    bottom: 240 // Adjust the value to offset the chart to the top
+                    bottom: 70 // Adjust the value to offset the chart to the top
                 }
             },
             plugins: {
