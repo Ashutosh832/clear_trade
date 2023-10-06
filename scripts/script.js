@@ -187,9 +187,19 @@
         datasets: [{
           label: 'Data',
           data: [15, 35, 20,25],
-          backgroundColor: 'rgb(14, 39, 20, 0.7)',
-          borderColor: 'rgb(14, 39, 20,1)',
-          borderWidth: 1,
+          backgroundColor: [
+            'rgba(29,64,47,0.4)',
+            'rgba(83,134,142,0.4)',
+            'rgba(124,170,194,0.4)',
+            'rgba(175,208,245,0.4)',
+        ],
+        borderColor: [
+            'rgba(29,64,47,255)',
+            'rgba(83,134,142,255)',
+            'rgba(124,170,194,255)',
+            'rgba(175,208,245,255)',
+        ],
+          borderWidth: 3,
         }],
       },
       options: {
@@ -235,10 +245,10 @@
                 label: 'Data',
                 data: [5, 10, 15, 20],
                 backgroundColor: [
-                    'rgba(29,64,47,255)',
-                    'rgba(83,134,142,255)',
-                    'rgba(124,170,194,255)',
-                    'rgba(175,208,245,255)',
+                    'rgba(29,64,47,0.4)',
+                    'rgba(83,134,142,0.4)',
+                    'rgba(124,170,194,0.4)',
+                    'rgba(175,208,245,0.4)',
                 ],
                 borderColor: [
                     'rgba(29,64,47,255)',
@@ -246,7 +256,7 @@
                     'rgba(124,170,194,255)',
                     'rgba(175,208,245,255)',
                 ],
-                borderWidth: 1
+                borderWidth: 0.5
             }]
         },
         options: {
