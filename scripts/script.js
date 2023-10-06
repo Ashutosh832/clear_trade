@@ -183,10 +183,10 @@
     chart1 = new Chart(ctx1, {
       type: 'line',
       data: {
-        labels: ['Supplier', 'Importer', 'Retailer'],
+        labels: ['Supplier', 'Importer', 'Retailer','Customer'],
         datasets: [{
           label: 'Data',
-          data: [10, 40, 15],
+          data: [15, 35, 20,25],
           backgroundColor: 'rgb(14, 39, 20, 0.7)',
           borderColor: 'rgb(14, 39, 20,1)',
           borderWidth: 1,
@@ -235,16 +235,16 @@
                 label: 'Data',
                 data: [5, 10, 15, 20],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.5)',
-                    'rgba(54, 162, 235, 0.5)',
-                    'rgba(255, 206, 86, 0.5)',
-                    'rgba(75, 192, 192, 0.5)',
+                    'rgba(29,64,47,255)',
+                    'rgba(83,134,142,255)',
+                    'rgba(124,170,194,255)',
+                    'rgba(175,208,245,255)',
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
+                    'rgba(29,64,47,255)',
+                    'rgba(83,134,142,255)',
+                    'rgba(124,170,194,255)',
+                    'rgba(175,208,245,255)',
                 ],
                 borderWidth: 1
             }]
@@ -252,8 +252,8 @@
         options: {
             responsive: true,
             maintainAspectRatio: true,
-            radius: '80%',
-            cutout: '40%',
+            radius: '90%',
+            cutout: '0%',
             layout: {
                 padding: {
                     bottom: 70 // Adjust the value to offset the chart to the top
@@ -267,7 +267,15 @@
             },
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'rgb(14, 39, 20,1)',
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: 'rgb(14, 39, 20,1)',
+                    }
                 }
             }
         },
@@ -285,15 +293,34 @@
             datasets: [{
                 label: 'Data',
                 data: [8, 16, 24, 12],
-                backgroundColor: 'rgba(75, 192, 200, 0.5)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: [
+                    'rgba(29,64,47,255)',
+                    'rgba(83,134,142,255)',
+                    'rgba(124,170,194,255)',
+                    'rgba(175,208,245,255)',
+                ],
+
+                borderColor: [
+                    'rgba(29,64,47,255)',
+                    'rgba(83,134,142,255)',
+                    'rgba(124,170,194,255)',
+                    'rgba(175,208,245,255)',
+                ],
                 borderWidth: 1
             }]
         },
         options: {
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'rgb(14, 39, 20,1)',
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: 'rgb(14, 39, 20,1)',
+                    }
                 }
             },
             layout: {
