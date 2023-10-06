@@ -1,9 +1,6 @@
 body {
   margin: 0;
   height: 100%;
-  /* background-image: url('./utils/clear\ Trade\ background.png'); 
-  background-size: cover; 
-  background-position: center; */
 }
 
 #visualizer {
@@ -14,14 +11,14 @@ body {
 #tab-view {
   flex: 1;
   background-color: #A4BE7B;
-  padding: 40px;
+  padding: 100px;
   margin: 0;
 }
 
 #graph-view {
   flex: 1;
   background-color: #E9E5D6;
-  padding: 40px;
+  padding: 90px;
   margin: 0;
   height: 100%;
 }
@@ -52,7 +49,6 @@ p {
   justify-content: center;
   margin-top: 1.2rem;
   flex-wrap: wrap;
-  border-radius: 5px;
   background-color: #E9E5D6;
 }
 
@@ -83,7 +79,7 @@ p {
 .tabcontent label {
   font-family: "Poppins", sans-serif;
   margin: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: rgba(40, 84, 48, 0.7254901961);
 }
@@ -92,6 +88,7 @@ p {
   color: #285430;
   font-size: 1rem;
   height: 1.8rem;
+  margin-bottom: 35px;
   background-color: #E9E5D6;
   padding: 4px;
   border: #E9E5D6;
@@ -103,7 +100,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
+}
+
+canvas {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

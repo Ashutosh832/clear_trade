@@ -6,9 +6,9 @@ $Poppins: 'Poppins', sans-serif;
 body {
   margin: 0;
   height: 100%;
-  /* background-image: url('./utils/clear\ Trade\ background.png'); 
-  background-size: cover; 
-  background-position: center; */
+  // background-image: url('./utils/clear\ Trade\ background.png');
+  // background-size: cover;
+  // background-position: center;
 }
 
 #visualizer {
@@ -19,14 +19,14 @@ body {
 #tab-view {
   flex: 1;
   background-color: $secondary;
-  padding: 40px;
+  padding: 100px;
   margin: 0;
 }
 
 #graph-view {
   flex: 1;
   background-color: $primary;
-  padding: 40px;
+  padding: 90px;
   margin: 0;
   height: 100%;
 }
@@ -57,7 +57,6 @@ p {
   justify-content: center;
   margin-top: 1.2rem;
   flex-wrap: wrap;
-  border-radius: 5px;
   background-color: $primary;
 }
 
@@ -88,7 +87,7 @@ p {
 .tabcontent label {
   font-family: $Poppins;
   margin: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #285430b9;
 }
@@ -97,6 +96,7 @@ p {
   color: $accents;
   font-size: 1rem;
   height: 1.8rem;
+  margin-bottom: 35px;
   background-color: $primary;
   padding: 4px;
   border: $primary;
@@ -108,5 +108,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
+}
+
+canvas {
+  margin-top: 30px;
 }
