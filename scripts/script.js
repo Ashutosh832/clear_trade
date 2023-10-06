@@ -178,45 +178,52 @@
     chart3.update();
   }
 
-  function graph1(){
-
+  function graph1() {
     var ctx1 = document.getElementById('g1').getContext('2d');
-      chart1 = new Chart(ctx1, {
-          type: 'line',
-          data: {
-              labels: ['Supplier', 'Importer', 'Retailer'],
-              datasets: [{
-                  label: 'Data',
-                  data: [10, 40, 15],
-                  backgroundColor: 'rgba(255,,1, 1.7)',
-                  borderColor: 'rgba(255,,1, 1.7)',
-                  borderWidth: 1
-              }]
+    chart1 = new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: ['Supplier', 'Importer', 'Retailer'],
+        datasets: [{
+          label: 'Data',
+          data: [10, 40, 15],
+          backgroundColor: 'rgb(14, 39, 20, 0.7)',
+          borderColor: 'rgb(14, 39, 20,1)',
+          borderWidth: 1,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        cutout: '40%',
+        layout: {
+          padding: {
+            bottom: 70 // Adjust the value to offset the chart to the top
           },
-          options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            cutout: '40%',
-            layout: {
-                padding: {
-                    bottom: 70 // Adjust the value to offset the chart to the top
-                }
-            },
-            plugins: {
-                legend: {
-                    display: true,
-                    position: 'bottom'
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
         },
-      });
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom',
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+                color: 'rgb(14, 39, 20,1)',
+            }
+          },
+          x : {
+            ticks: {
+                color: 'rgb(14, 39, 20,1)',
+            }
+          }
+        },
+      },
+    });
   }
-
+  
   function graph2(){
 
     var ctx2 = document.getElementById('g2').getContext('2d');
