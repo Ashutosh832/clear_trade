@@ -60,7 +60,7 @@ body {
 #tab-view {
   flex: 1;
   background-color: #0e2714;
-  padding: 100px;
+  padding: 50px 100px 100px 100px;
   margin: 0;
   background: linear-gradient(to right, #0e2714, rgba(14, 39, 20, 0.9960784314));
 }
@@ -68,7 +68,7 @@ body {
 #graph-view {
   flex: 1;
   background-color: #7da30c;
-  padding: 90px;
+  padding: 30px 90px 90px 90px;
   margin: 0;
   background: linear-gradient(to right, #8dab21, rgba(141, 171, 33, 0.9490196078));
 }
