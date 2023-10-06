@@ -143,38 +143,38 @@
   
 
   function update2() {
-    updateData();
-
+    // Assuming you have already defined and populated 'dataArray' and 'values'
+  
     var total = 0;
-    for (var i = 0; i < dataArray.length; i++){
-        total += dataArray[i];
+    for (var i = 0; i < dataArray.length; i++) {
+      total += dataArray[i];
     }
-
-    //totals each
-    values[0] = (dataArray[0] + dataArray[1])*100/total;
-    values[1] = (dataArray[2] + dataArray[3] + dataArray[4])*100/total;
-    values[2] = (dataArray[5] + dataArray[6])*100/total;
-    values[3] = dataArray[7]*100/total;
-
+  
+    // Calculate percentages and update 'values' array
+    values[0] = (dataArray[0] + dataArray[1]) * 100 / total;
+    values[1] = (dataArray[2] + dataArray[3] + dataArray[4]) * 100 / total;
+    values[2] = (dataArray[5] + dataArray[6]) * 100 / total;
+    values[3] = dataArray[7] * 100 / total;
+  
+    // Assuming 'chart2' is your Chart.js instance
     // Update the chart data and re-render
-    chart2.data.datasets[0].data = [values];
+    chart2.data.datasets[0].data = values; // Remove the outer array brackets
     chart2.update();
   }
   
-
   function update3() {
     updateData();
-
+  
     var factors = [0.4, 0.3, 0.2, 0.1];
     var risk = [];
-
-    risk[0] = factors[0]*(values[0]);
-    risk[1] = factors[1]*(values[1]);
-    risk[2] = factors[2]*(values[2]);
-    risk[3] = factors[3]*(values[3]);
-
+  
+    risk[0] = factors[0] * values[0];
+    risk[1] = factors[1] * values[1];
+    risk[2] = factors[2] * values[2];
+    risk[3] = factors[3] * values[3];
+  
     // Update the chart data and re-render
-    chart3.data.datasets[0].data = [risk];
+    chart3.data.datasets[0].data = risk; // Remove the outer array brackets
     chart3.update();
   }
 
