@@ -86,13 +86,26 @@ document.addEventListener('DOMContentLoaded', function() {
         londonButton2.click();
 
     //AiBotStuff
-    document.querySelector('.chat-footer form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+    document.getElementById('chat-circle').addEventListener('click', function() {
+        // Get all the input fields
+        var inputFields = document.querySelectorAll('.input-field');
     
-        var userInput = document.getElementById('chatfoot').value;
-        var summaryDiv = document.querySelector('.summary');
-        summaryDiv.textContent = userInput;
+        // Create an object to store the input values
+        var inputData = {};
+    
+        // Loop through the input fields
+        inputFields.forEach(function(input) {
+          inputData[input.id] = input.value;
+        });
+    
+        // Print the input values to the console
+        console.log(inputData['supplier1']);
+
+
+        var prompt = "Summerize the financial situation of this supply using the given information and also find out who's getting exploiting and who's is the exploiter and if someone's profit margin is too high:\
+        n Supplier manufacturing cost is ${inputData['supplier1']}";
       });
+
 });
 
   function openTab(evt, cityName, group) {
