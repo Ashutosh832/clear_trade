@@ -102,8 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(inputData['supplier1']);
 
 
-        var prompt = "Summerize the financial situation of this supply using the given information and also find out who's getting exploiting and who's is the exploiter and if someone's profit margin is too high:\
-        n Supplier manufacturing cost is ${inputData['supplier1']}";
+        var prompt = "";
       });
 
 });
@@ -135,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     {
         // Push the value of each input field into the array
         dataArray[i] = (inputFields[i].value);
-        console.log(inputFields[i].value);
+        //console.log(inputFields[i].value);
     }
   }
 
