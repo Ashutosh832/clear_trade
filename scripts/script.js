@@ -68,23 +68,32 @@
     // Get all the input elements
     var inputFields = document.querySelectorAll('.input-field');
 
-  //Main function
-  document.addEventListener('DOMContentLoaded', function() {
-      // Code inside this block will run when the DOM is fully loaded
+//Main function
+document.addEventListener('DOMContentLoaded', function() {
+    // Code inside this block will run when the DOM is fully loaded
 
-      //Load Graphs
-      graph1()
-      graph2()
-      graph3()
+    //Load Graphs
+    graph1()
+    graph2()
+    graph3()
 
-      console.log("Loaded OK");
+    console.log("Loaded OK");
 
-      //Open tab by default
-      var londonButton = document.querySelector(".tablinks.def");
-          londonButton.click();
-      var londonButton2 = document.querySelector(".tablinks.def2");
-          londonButton2.click();
-  });
+    //Open tab by default
+    var londonButton = document.querySelector(".tablinks.def");
+        londonButton.click();
+    var londonButton2 = document.querySelector(".tablinks.def2");
+        londonButton2.click();
+
+    //AiBotStuff
+    document.querySelector('.chat-footer form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        var userInput = document.getElementById('chatfoot').value;
+        var summaryDiv = document.querySelector('.summary');
+        summaryDiv.textContent = userInput;
+      });
+});
 
   function openTab(evt, cityName, group) {
       // Declare all variables
@@ -187,19 +196,12 @@
         datasets: [{
           label: 'Data',
           data: [15, 35, 20,25],
-          backgroundColor: [
-            'rgba(29,64,47,0.4)',
-            'rgba(83,134,142,0.4)',
-            'rgba(124,170,194,0.4)',
-            'rgba(175,208,245,0.4)',
-        ],
-        borderColor: [
-            'rgba(29,64,47,255)',
-            'rgba(83,134,142,255)',
-            'rgba(124,170,194,255)',
-            'rgba(175,208,245,255)',
-        ],
+          backgroundColor:'rgb(14, 39, 20, 0.6)',
+        
+        borderColor: 'rgb(14, 39, 20, 0.6)',
           borderWidth: 3,
+          pointRadius: 8, // Set the size of data points (markers)
+          pointHoverRadius: 20, // Set the size of data points on hover
         }],
       },
       options: {
