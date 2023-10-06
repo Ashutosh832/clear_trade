@@ -117,6 +117,7 @@ p {
   color: #c1ff72;
   background-color: #21502c;
   border: 5px;
+  border-right: 1px solid rgba(194, 255, 114, 0.6352941176);
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
@@ -174,7 +175,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* For Firefox, which uses a different style */
 input[type=number] {
   -moz-appearance: textfield;
-  appearance: textfield;
 }
 
 .close-btn {
