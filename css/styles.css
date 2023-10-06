@@ -117,6 +117,7 @@ p {
   color: #c1ff72;
   background-color: #21502c;
   border: 5px;
+  border-right: 1px solid rgba(194, 255, 114, 0.6352941176);
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
@@ -183,6 +184,14 @@ input[type=number] {
   font-size: 1.5rem;
   cursor: pointer;
   outline: none;
+}
+
+.summary {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.5rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
