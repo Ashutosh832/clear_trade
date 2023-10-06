@@ -80,9 +80,9 @@
       console.log("Loaded OK");
 
       //Open tab by default
-      var londonButton = document.querySelector(".tablinks.def:nth-child(1)");
+      var londonButton = document.querySelector(".tablinks.def");
           londonButton.click();
-      var londonButton2 = document.querySelector(".tablinks.def2:nth-child(1)");
+      var londonButton2 = document.querySelector(".tablinks.def2");
           londonButton2.click();
   });
 
