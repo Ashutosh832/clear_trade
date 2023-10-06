@@ -6,9 +6,6 @@ $Poppins: 'Poppins', sans-serif;
 body {
   margin: 0;
   height: 100%;
-  // background-image: url('./utils/clear\ Trade\ background.png');
-  // background-size: cover;
-  // background-position: center;
 }
 
 #visualizer {
@@ -82,7 +79,6 @@ body {
   background-color: $primary;
   padding: 30px 100px 100px 100px;
   margin: 0;
-  // height: 100%;
   background: linear-gradient(to right, #8dab21, #8dab21f2);
 }
 
@@ -130,6 +126,7 @@ p {
   background-color: #21502c;
   border: 5px;
   // border-color: $accents;
+  border-right: 1px solid #c2ff72a2;
   // outline: 1px solid #c1ff72;
   cursor: pointer;
   padding: 14px 16px;
