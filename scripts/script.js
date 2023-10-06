@@ -307,3 +307,23 @@
         }
     });
   }
+
+  document.querySelector('#chat-circle').addEventListener('click', function() {
+    document.getElementById('chat-box').style.display = 'block';
+    document.querySelector('.chat-overlay').style.display = 'block';
+});
+
+document.querySelector('.chat-overlay').addEventListener('click', function() {
+    document.getElementById('chat-box').style.display = 'none';
+    document.querySelector('.chat-overlay').style.display = 'none';
+});
+
+
+function closeChat() {
+    document.getElementById("chat-box").style.display = "none";
+    document.getElementById("chat-circle").style.display = "block";
+    
+    // Shift focus back to an element on the main website (e.g., tab-view)
+    document.getElementById("tab-view").focus();
+}
+

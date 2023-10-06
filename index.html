@@ -13,8 +13,30 @@
 </head>
 
 <body>
+  <!-- AI -->
+  <div id="chat-circle">
+    <div class="chat-overlay"></div>
+    <div class="chat-btn"></div>
+    </div>
+    
+    <div id="chat-box" class="chat-window">
+        <div class="chat-header">
+            <span class="chat-title">Chat</span>
+            <button class="close-btn" onclick="closeChat()">X</button>
+        </div>
+        <div class="chat-body">
+            <!-- Chat content goes here -->
+            what
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatfoot" class="message-input" placeholder="Type a message...">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- AI END -->
   <div id="visualizer">
-<section id="tab-view">
+  <section id="tab-view">
   <div>
     <h1>Hello, Welcome to clearTrade!</h1>
     <p class="units">Units of trade: Carton of 6.(Number are for per-unit)</p>
@@ -99,7 +121,7 @@
 </section>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="scripts/script.js"></script>
-  <script src="scripts/app.js "></script>
+  <script src="/scripts/script.js"></script>
+  <script type="module" src="/scripts/app.js "></script>
 </body>
 </html>

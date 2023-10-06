@@ -8,6 +8,53 @@ body {
   flex-wrap: wrap;
 }
 
+#chat-circle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.chat-btn {
+  background-image: url('./bot.png');
+  background-size: cover;
+  width: 60px; /* Adjust the width and height as needed */
+  height: 60px;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+.chat-overlay {
+  /* Style for the overlay, initially hidden */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#chat-box {
+  /* Style for the mini window, initially hidden */
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
 #tab-view {
   flex: 1;
   background-color: #A4BE7B;
@@ -107,4 +154,11 @@ canvas {
   margin-top: 30px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
