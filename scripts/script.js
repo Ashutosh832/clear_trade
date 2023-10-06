@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     values[2] = (dataArray[5] + dataArray[6]) * 100 / total;
     values[3] = dataArray[7] * 100 / total;
   
-    // Assuming 'chart2' is your Chart.js    instance
+    // Assuming 'chart2' is your Chart.js instance
     // Update the chart data and re-render
     chart2.data.datasets[0].data = values; // Remove the outer array brackets
     chart2.update();
