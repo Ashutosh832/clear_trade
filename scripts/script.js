@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
       total += dataArray[i];
     }
   
-    // Calculate percentages and update 'values' array
+    // Calculatepercentages and update 'values' array
     values[0] = (dataArray[0] + dataArray[1]) * 100 / total;
     values[1] = (dataArray[2] + dataArray[3] + dataArray[4]) * 100 / total;
     values[2] = (dataArray[5] + dataArray[6]) * 100 / total;
